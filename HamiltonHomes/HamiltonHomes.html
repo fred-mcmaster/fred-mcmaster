@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      h4{
+        font-style: italic;
+      }
+      nav{
+        position: relative;
+      }
+      #hotlink{
+        display: flex;
+      }
+      .btn-outline-primary{
+        margin: 5px;
+      }
+      @media screen and (max-width: 1200px)
+    {
+      #hotlink{
+        flex-direction: column;
+      }  
+    }
+    </style>
+
+    <title>Hamilton Homes</title>
+  </head>
+  
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hamilton</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav col-12 col-lg-auto me-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="HamiltonHomes.html" class="nav-link px-2 active">Home</a></li>
+                <li><a href="#" class="nav-link px-2 ">Search</a></li>
+                <li><a href="map.html" class="nav-link px-2 ">Map</a></li>
+                <li><a href="calculator.html" class="nav-link px-2 ">Calculator</a></li>
+                <li><a href="#" class="nav-link px-2 ">Realtors</a></li>
+                <li><a href="#" class="nav-link px-2 ">Login</a></li>
+            </ul>
+        
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+    </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row" style="padding: 10px 10px;">
+        <!--This is the 1st col-->
+        <div class="col-sm-4 col-xl-3">
+          <h2> Real Estate</h2>
+          <p>Refine your Markham real estate search by price, bedroom, or type (house, townhouse, or condo). View up-to-date MLS® listings in Hamilton.</p>
+          <div id ="hotlink" class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">Market Stats</button>
+            <button type="button" class="btn btn-outline-primary">Neighbourhoods</button>
+            <button type="button" class="btn btn-outline-primary">Recently Sold</button>
+          </div>
+        </div>
+        <!--This is the 2nd col-->
+        <div class="col-sm-4 col-xl-6">
+          <h2>Find a Home</h2>
+          <img src="house.jpeg" style="width:100%;height:auto;object-fit:contain;" />
+          <div class="price"><h3>$800,000</h3></div><p>House info...</p> <hr>
+          <img src="house.jpeg" style="width:100%;height:auto;object-fit:contain;" />
+          <div class="price"><h3>$800,000</h3></div><p>House info...</p> <hr>
+          <img src="house.jpeg" style="width:100%;height:auto;object-fit:contain;" />
+          <div class="price"><h3>$800,000</h3></div><p>House info...</p> <hr>
+          <img src="house.jpeg" style="width:100%;height:auto;object-fit:contain;" />
+          <div class="price"><h3>$800,000</h3></div><p>House info...</p> <hr>
+
+          <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="Second group" style="position: relative;">
+              <button type="button" class="btn btn-secondary">1</button>
+              <button type="button" class="btn btn-secondary">2</button>
+              <button type="button" class="btn btn-secondary">3</button>
+              <button type="button" class="btn btn-secondary">4</button>
+              <button type="button" class="btn btn-secondary">5</button>
+              <button type="button" class="btn btn-secondary">6</button>
+              <button type="button" class="btn btn-secondary">7</button>
+              <button type="button" class="btn btn-secondary">8</button>
+              <button type="button" class="btn btn-secondary">9</button>                
+            </div>
+          </div>
+          <hr>
+        </div>
+        <!--This is the 3rd col-->
+        <div class="col-sm-4 col-xl-3">
+          <h2>News & Advice</h2><hr>
+          <section>
+            <h4>Housing Trends</h3>
+            <p>Get the inside track and discover the trends and market insights that can only come from the largest network of real estate agents across Canada.</p><br>
+            <button type="button" class="btn btn-primary">Explore Trends</button><hr>
+          </section>
+          <section>
+            <h4>Buying & Selling Tips</h3>
+            <p>Why start from scratch when you can learn from the best. We've done the work for you by compiling our best tips and tricks on how to win in today's market.</p><br>
+            <button type="button" class="btn btn-primary">View Housing Tips</button><hr>
+          </section>
+          <section>
+            <h4>First Time Buyers</h3>
+            <p>Get a step-by-step walkthrough of everything you need to do to get into the home buying process with confidence.</p><br>
+            <button type="button" class="btn btn-primary">View The Guide</button><hr>
+          </section>
+        </div>        
+      </div>
+    </div>
+
+    <footer class="container bottom-0 mt-auto footer">
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="text-muted">© 2022 Hamilton Homes Real Estate, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
